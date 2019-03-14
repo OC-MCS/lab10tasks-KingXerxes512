@@ -23,7 +23,7 @@
     <ProjectGuid>{3D88F6D8-EDF4-4060-A542-67E500A27B87}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Employee</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClInclude Include="Employee.h" />
     <ClInclude Include="ProductionWorker.h" />
+    <ClInclude Include="ShiftSupervisor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="ProductionWorker.cpp" />
+    <ClCompile Include="ShiftSupervisor.cpp" />
     <ClCompile Include="testEmployees.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

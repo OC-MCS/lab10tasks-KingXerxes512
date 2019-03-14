@@ -6,7 +6,7 @@
 int main()
 {
 	FuelGauge fuel;
-	Odometer odometer(0, fuel);
+	Odometer odometer(0);
 
 	// Simulates filling the tank up to full from 0
 	for (int x = 0; x < 15; x++)
@@ -18,7 +18,7 @@ int main()
 	{
 
 		// add mile driven
-		odometer.addMile();
+		odometer.addMile(fuel);
 
 		// display the mileage
 		std::cout << "Miles: " << odometer.getMileage() << std::endl;

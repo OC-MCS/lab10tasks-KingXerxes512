@@ -3,7 +3,6 @@
 class Odometer
 {
 private:
-	FuelGauge fuelGauge;
 	int initialMileage;
 	int mileage;
 
@@ -14,8 +13,8 @@ private:
 	static const int MPG = 24;
 
 public:
-	Odometer(int mileage, FuelGauge fuelGauge);
-	void addMile();
+	Odometer(int mileage);
+	void addMile(FuelGauge& other);
 	int getMileage();
 };
 

@@ -1,10 +1,9 @@
 #include "Odometer.h" 
 
-Odometer::Odometer(int mileage, FuelGauge fuelGauge)
+Odometer::Odometer(int mileage)
 {
 	this->initialMileage = mileage;
 	this->mileage = mileage;
-	this->fuelGauge = fuelGauge;
 }
 
 int Odometer::getMileage()
@@ -12,7 +11,7 @@ int Odometer::getMileage()
 	return mileage;
 }
 
-void Odometer::addMile()
+void Odometer::addMile(FuelGauge& other)
 {
 	if (mileage < MAXIMUM_MILEAGE)
 	{
@@ -26,6 +25,6 @@ void Odometer::addMile()
 	int driven = initialMileage - mileage;
 	if (driven % MPG == 0)
 	{
-		fuelGauge.burnFuel();
+		other.burnFuel();
 	}
 }

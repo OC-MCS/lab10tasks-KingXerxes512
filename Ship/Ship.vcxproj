@@ -139,6 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Cargo.h" />
+    <ClInclude Include="Cruise.h" />
+    <ClInclude Include="Ship.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cargo.cpp" />
+    <ClCompile Include="Cruise.cpp" />
+    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="TestShipClasses.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
